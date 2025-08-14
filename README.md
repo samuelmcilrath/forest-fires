@@ -6,7 +6,7 @@ Predicting their spread is challenging due to the many contributing factors such
 This project aimed to determine whether meteorological and environmental data could accurately predict the **spread of a forest fire**.
 
 Initially, the problem was approached as a **regression task** to predict burned area (in hectares) based on features such as temperature, humidity, wind speed, rainfall, and fuel moisture indexes.  
-Due to poor correlation and skewed distributions (many zeros), the problem was reframed as a **binary classification task**:  
+After further inspection, we noticed the dataset was heavily skewed towards 0 -> the problem was reframed as a **binary classification task**:  
 - **Class 0:** No fire or very small burned area  
 - **Class 1:** Significant burned area  
 
@@ -30,6 +30,7 @@ Due to poor correlation and skewed distributions (many zeros), the problem was r
    - Examined distributions of target variable
    - Identified heavy skew toward zero area burned
    - Investigated feature correlations with fire area
+<img width="694" height="395" alt="image" src="https://github.com/user-attachments/assets/3f268a91-9d81-4ef7-a019-a6d7849d6e8c" />
 
 2. **Regression Attempts**
    - Linear, Ridge, Lasso Regression
